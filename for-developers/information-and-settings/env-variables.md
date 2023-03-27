@@ -37,7 +37,7 @@ This table is horizontally scrollable, version information is located in the las
 
 * [General](env-variables.md#general)
 * [Indexer](env-variables.md#indexer-management)
-* [Optimism Rollup Management](env-variables.md#optimism-rollup-management)
+* [Optimism Rollup](env-variables.md#optimism-rollup-management)
 * [Exchange Rates](env-variables.md#exchange-rates-management)
 * [Cache](env-variables.md#cache-management)
 * [Gas Price Oracle](env-variables.md#gas-price-oracle-management)
@@ -169,6 +169,13 @@ This table is horizontally scrollable, version information is located in the las
 | `INDEXER_OPTIMISM_L1_WITHDRAWALS_START_BLOCK`      |          | The number of start block on L1 to index withdrawal events. If the table of withdrawal events is not empty, the process will continue indexing from the last indexed withdrawal event. Implemented in [#6980](https://github.com/blockscout/blockscout/pull/6980). | (empty)       | master |
 | `INDEXER_OPTIMISM_L2_WITHDRAWALS_START_BLOCK`      |          | The number of start block on L2 to index withdrawals. If the table of withdrawals is not empty, the process will continue indexing from the last indexed withdrawal. Implemented in [#6980](https://github.com/blockscout/blockscout/pull/6980). | (empty)       | master |
 | `INDEXER_OPTIMISM_L2_MESSAGE_PASSER_CONTRACT`      |          | The address of L2ToL1MessagePasser contract to index withdrawals. Required if `INDEXER_OPTIMISM_L2_WITHDRAWALS_START_BLOCK` is not empty. Implemented in [#6980](https://github.com/blockscout/blockscout/pull/6980). | (empty)       | master |
+
+### Optimism Rollup Management
+
+| Variable                                           | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Default       | Version |
+| -------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------- |
+| `INDEXER_OPTIMISM_L1_DEPOSITS_START_BLOCK`         |          | The number of the L1 block from which deposits will be fetched. Implemented in [#6993](https://github.com/blockscout/blockscout/pull/6993).                                                                                                                                                                                                                                                                                                                                                                                   | (empty)       | master  |
+| `INDEXER_OPTIMISM_L1_DEPOSITS_BATCH_SIZE`          |          | Number of blocks in a single `eth_getLogs` request. If not set defaults to 500. Implemented in [#6993](https://github.com/blockscout/blockscout/pull/6993).                                                                                                                                                                                                                                                                                                                                                                   | (empty)       | master  |
 
 ### Exchange rates management
 
