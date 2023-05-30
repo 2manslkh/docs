@@ -43,6 +43,7 @@ This table is horizontally scrollable, version information is located in the las
 
 * [General](env-variables.md#general)
 * [Indexer](env-variables.md#indexer-management)
+* [zkEVM Rollup](env-variables.md#zkevm-rollup-management)
 * [Exchange Rates](env-variables.md#exchange-rates-management)
 * [Cache](env-variables.md#cache-management)
 * [Gas Price Oracle](env-variables.md#gas-price-oracle-management)
@@ -177,6 +178,10 @@ This table is horizontally scrollable, version information is located in the las
 | `INDEXER_DISABLE_WITHDRAWALS_FETCHER`              |          | If `true`, withdrawals fetcher is disabled. Implemented in [#6694](https://github.com/blockscout/blockscout/pull/6694).                                                                                                                                                                                                                                    | `true`       | v5.1.5+  |
 | `WITHDRAWALS_FIRST_BLOCK`                          |          | The block number, where import of withdrawals by catchup fetcher begins from. Should be the block where withdrawals upgrade occured on the chain. Implemented in [#6694](https://github.com/blockscout/blockscout/pull/6694).                                                                                                                              | (empty)      | v5.1.5+  |
 | `INDEXER_CATCHUP_BLOCK_INTERVAL`                |          | Interval between blocks catchup fetcher tasks. Implemented in [#7489](https://github.com/blockscout/blockscout/pull/7489).                                                                                                                                                                                                                                                                                                                                                                                                    | `5s`                                       | v5.1.5+ |
+
+### zkEVM Rollup management
+
+| `INDEXER_ZKEVM_BATCHES_ENABLED`        |          | Enables Polygon zkEVM batches fetcher. Implemented in [#7584](https://github.com/blockscout/blockscout/pull/7584). | `false` | master |
 
 ### Exchange rates management
 
