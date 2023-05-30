@@ -116,6 +116,9 @@ Note that this should always be enforced because as long as there is one DB tran
 | Explorer.Chain.Token | tokens | asc: :contract\_address\_hash |
 | Explorer.Chain.TokenTransfer | token\_transfers | \[asc: :transaction\_hash, asc: :log\_index\] |
 | Explorer.Chain.TransactionAction | transaction\_actions | \[asc: :hash, asc: :log\_index\] |
+| Explorer.Chain.ZkevmTxnBatch | zkevm\_transaction\_batches | \[asc: :number\] |
+| Explorer.Chain.ZkevmBatchTxn | zkevm\_batch\_l2\_transactions | \[asc: :hash\] |
+| Explorer.Chain.ZkevmLifecycleTxn | zkevm\_lifecycle\_l1\_transactions | \[asc: :id\] |
 | Explorer.Chain.Address.TokenBalance | address\_token\_balances | \[asc: :address\_hash, asc: :token\_contract\_address\_hash, asc: :block\_number\] |
 | Explorer.Chain.Address.CurrentTokenBalance | address\_current\_token\_balances | \[asc: :address\_hash, asc: :token\_contract\_address\_hash\] |
 | Explorer.Chain.StakingPool | staking\_pools | :staking\_address\_hash |
